@@ -1,4 +1,4 @@
-package events
+package main
 
 import (
 	"log"
@@ -9,7 +9,7 @@ import (
 func onReady(dc *discordgo.Session, r *discordgo.Ready) {
 	log.Println("Login Sebagai " + r.User.Username + "#" + r.User.Discriminator)
 
-	err := dc.UpdateStatus(0, "Ok")
+	err := dc.UpdateStatus(0, "Development")
 	if err != nil {
 		log.Println("Error saat ingin mengubah status")
 	}

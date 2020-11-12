@@ -1,4 +1,4 @@
-module main
+module github.com/Abdurrahman075/zaros
 
 go 1.15
 

@@ -16,6 +16,9 @@ func main() {
 		panic(err)
 	}
 
+	dc.AddHandler(onReady)
+	dc.AddHandler(onMessageCreateCommandHandler)
+
 	err = dc.Open()
 	if err != nil {
 		panic(err)
